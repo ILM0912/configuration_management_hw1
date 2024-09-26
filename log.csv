@@ -1,0 +1,106 @@
+User Command Date Time
+Senya	ls	2024-09-26	20:58:42
+Senya	tac text_3.txt	2024-09-26	20:58:49
+Senya	clear	2024-09-26	20:59:17
+Senya	ls ../	2024-09-26	21:35:30
+Senya	ls	2024-09-26	21:35:41
+Senya	clear	2024-09-26	21:35:50
+Senya	ls	2024-09-26	21:35:58
+Senya	cd /folder_1/	2024-09-26	21:36:09
+Senya	cd folder_1/../	2024-09-26	21:36:19
+Senya	cd folder_1 	2024-09-26	21:36:37
+Senya	cd ../	2024-09-26	21:36:43
+Senya	cd ../folder_1	2024-09-26	21:37:05
+Senya	            cd ..	2024-09-26	21:37:40
+Senya	cd ...............	2024-09-26	21:37:58
+Senya	cd //	2024-09-26	21:38:01
+Senya	cd /	2024-09-26	21:38:04
+Senya	cd /disk/	2024-09-26	21:38:08
+Senya	cd disk/	2024-09-26	21:38:12
+Senya	cd /disk/	2024-09-26	21:38:24
+Senya	cd /disk	2024-09-26	21:38:30
+Senya	clear	2024-09-26	21:38:44
+Senya	cd disk/	2024-09-26	21:38:50
+Senya	cd /disl	2024-09-26	21:39:16
+Senya	cd /disk	2024-09-26	21:39:19
+Senya	cd []	2024-09-26	21:39:23
+Senya	cd cd	2024-09-26	21:39:27
+Senya	cd cd ..	2024-09-26	21:39:30
+Senya	touch disk	2024-09-26	21:39:50
+Senya	touch disk..	2024-09-26	21:40:14
+Senya	touch disk.!	2024-09-26	21:40:31
+Senya	touch disk.ваоцх	2024-09-26	21:40:58
+Senya	ls	2024-09-26	21:41:04
+Senya	tac disk.ваоцх	2024-09-26	21:41:19
+Senya	touch disk.disk	2024-09-26	21:42:12
+Senya	tac disk.disk	2024-09-26	21:42:20
+Senya	cd disk.disk	2024-09-26	21:42:25
+Senya	cd ..	2024-09-26	21:42:30
+Senya	cd ..	2024-09-26	21:42:33
+Senya	cd ..	2024-09-26	21:42:35
+Senya	mv disk.disk /	2024-09-26	21:42:52
+Senya	mv disk.disk folder_1/	2024-09-26	21:43:02
+Senya	mv disk.disk /disk/folder_1/ disk.disk	2024-09-26	21:43:56
+Senya	mv disk.disk /disk/folder_1/disk.disk	2024-09-26	21:44:25
+Senya	mv disk.disk /disk/folder_1/disk.disk	2024-09-26	21:46:08
+Senya	ls	2024-09-26	21:46:13
+Senya	ls folder_1	2024-09-26	21:46:36
+Senya	touch disk..	2024-09-26	21:46:52
+Senya	ls	2024-09-26	21:47:18
+Senya	ls	2024-09-26	21:47:32
+Senya	ls	2024-09-26	21:48:57
+Senya	ls	2024-09-26	21:49:36
+Senya	ls	2024-09-26	21:49:51
+Senya	ls	2024-09-26	21:55:23
+Senya	ls	2024-09-26	21:55:30
+Senya	ls	2024-09-26	21:59:15
+Senya	ls	2024-09-26	21:59:39
+Senya	ls	2024-09-26	21:59:43
+Senya	ls	2024-09-26	22:02:15
+Senya	ls	2024-09-26	22:02:56
+Senya	ls	2024-09-26	22:03:02
+Senya	clear	2024-09-26	22:03:12
+Senya	ls	2024-09-26	22:07:28
+Senya	ls	2024-09-26	22:07:36
+Senya	clear	2024-09-26	22:07:42
+Senya	ls	2024-09-26	22:07:44
+Senya	ls	2024-09-26	22:08:02
+Senya	ls	2024-09-26	22:08:11
+Senya	ls	2024-09-26	22:08:17
+Senya	cd	2024-09-26	22:08:24
+Senya	ls	2024-09-26	22:09:26
+Senya	clear	2024-09-26	22:09:29
+Senya	ls	2024-09-26	22:16:57
+Senya	ls	2024-09-26	22:17:04
+Senya	ls	2024-09-26	22:17:13
+Senya	ls	2024-09-26	22:25:29
+Senya	ls	2024-09-26	22:25:35
+Senya	ls	2024-09-26	22:26:27
+Senya	ls	2024-09-26	22:26:29
+Senya	ls	2024-09-26	22:26:30
+Senya	ls	2024-09-26	22:26:31
+Senya	ls	2024-09-26	22:26:32
+Senya	ls	2024-09-26	22:26:33
+Senya	ls	2024-09-26	22:26:34
+Senya	ls	2024-09-26	22:26:35
+Senya	ls	2024-09-26	22:29:09
+Senya	ls	2024-09-26	22:29:10
+Senya	ls	2024-09-26	22:29:11
+Senya	ls	2024-09-26	22:29:12
+Senya	cd	2024-09-26	22:29:14
+Senya	cd	2024-09-26	22:29:15
+Senya	cd	2024-09-26	22:29:16
+Senya	cd	2024-09-26	22:29:17
+Senya	cd	2024-09-26	22:29:18
+Senya	tac	2024-09-26	22:29:23
+Senya	tac	2024-09-26	22:29:29
+Senya	tac	2024-09-26	22:29:34
+Senya	ls	2024-09-26	22:29:42
+Senya	ls	2024-09-26	22:29:49
+Senya	ls	2024-09-26	22:30:17
+Senya	ls	2024-09-26	22:33:34
+Senya	cd	2024-09-26	22:34:03
+Senya	ls	2024-09-26	22:34:55
+Senya	touch text_1.txt	2024-09-26	22:35:03
+Senya	tac text_1.txt	2024-09-26	22:35:12
+Senya	tac text_1.txt text_2.txt	2024-09-26	22:35:26

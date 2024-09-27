@@ -11,7 +11,6 @@ Senya	cd folder_1/../	2024-09-26	21:36:19
 Senya	cd folder_1 	2024-09-26	21:36:37
 Senya	cd ../	2024-09-26	21:36:43
 Senya	cd ../folder_1	2024-09-26	21:37:05
-Senya	            cd ..	2024-09-26	21:37:40
 Senya	cd ...............	2024-09-26	21:37:58
 Senya	cd //	2024-09-26	21:38:01
 Senya	cd /	2024-09-26	21:38:04
@@ -104,3 +103,426 @@ Senya	ls	2024-09-26	22:34:55
 Senya	touch text_1.txt	2024-09-26	22:35:03
 Senya	tac text_1.txt	2024-09-26	22:35:12
 Senya	tac text_1.txt text_2.txt	2024-09-26	22:35:26
+Senya	ls	2024-09-27	12:48:32
+Senya	ls	2024-09-27	12:54:35
+Senya	tac disk.!	2024-09-27	12:54:52
+Senya	touch test.py	2024-09-27	12:55:25
+Senya	ls	2024-09-27	12:55:29
+Senya	cd test.py	2024-09-27	12:55:40
+Senya	tac test.py	2024-09-27	12:55:52
+Senya	mv test.py ../folder_1	2024-09-27	12:56:07
+Senya	ls	2024-09-27	12:56:27
+Senya	mv disk.! ../folder_1	2024-09-27	12:57:20
+Senya	ls	2024-09-27	12:57:24
+Senya	cd folder_1	2024-09-27	12:57:29
+Senya	ls	2024-09-27	12:57:30
+Senya	mv error error	2024-09-27	12:59:12
+Senya	"ls
+"	2024-09-27	13:17:23
+Senya	"cd ..
+"	2024-09-27	13:17:23
+Senya	"cd ./folder_1
+"	2024-09-27	13:17:23
+Senya	"ls
+"	2024-09-27	13:17:23
+Senya	"cd ..
+"	2024-09-27	13:17:23
+Senya	"tac text_1.txt
+"	2024-09-27	13:17:23
+Senya	ls	2024-09-27	13:17:50
+Senya	cd ..	2024-09-27	13:17:50
+Senya	cd ./folder_1	2024-09-27	13:17:50
+Senya	ls	2024-09-27	13:17:50
+Senya	cd ..	2024-09-27	13:17:50
+Senya	tac text_1.txt	2024-09-27	13:17:50
+Senya	ls	2024-09-27	13:17:52
+Senya	cd ..	2024-09-27	13:17:52
+Senya	cd ./folder_1	2024-09-27	13:17:52
+Senya	ls	2024-09-27	13:17:52
+Senya	cd ..	2024-09-27	13:17:52
+Senya	tac text_1.txt	2024-09-27	13:17:52
+Senya	ls	2024-09-27	13:18:09
+Senya	cd ..	2024-09-27	13:18:09
+Senya	cd ./folder_1	2024-09-27	13:18:09
+Senya	ls	2024-09-27	13:18:09
+Senya	cd ..	2024-09-27	13:18:09
+Senya	tac text_1.txt	2024-09-27	13:18:09
+Senya	ls	2024-09-27	13:19:23
+Senya	cd ..	2024-09-27	13:19:23
+Senya	cd ./folder_1	2024-09-27	13:19:23
+Senya	ls	2024-09-27	13:19:23
+Senya	cd ..	2024-09-27	13:19:23
+Senya	tac text_1.txt	2024-09-27	13:19:23
+Senya	ls	2024-09-27	13:19:36
+Senya	cd ..	2024-09-27	13:19:36
+Senya	cd ./folder_1	2024-09-27	13:19:36
+Senya	ls	2024-09-27	13:19:36
+Senya	cd ..	2024-09-27	13:19:36
+Senya	tac text_1.txt	2024-09-27	13:19:36
+Senya	clear	2024-09-27	13:19:49
+Senya	ls	2024-09-27	13:22:50
+Senya	cd ..	2024-09-27	13:22:50
+Senya	cd ./folder_1	2024-09-27	13:22:50
+Senya	ls	2024-09-27	13:22:50
+Senya	cd ..	2024-09-27	13:22:50
+Senya	tac text_1.txt	2024-09-27	13:22:50
+Senya	ls	2024-09-27	13:30:26
+Senya	cd ..	2024-09-27	13:30:26
+Senya	cd ./folder_1	2024-09-27	13:30:26
+Senya	ls	2024-09-27	13:30:26
+Senya	cd ..	2024-09-27	13:30:26
+Senya	tac text_1.txt	2024-09-27	13:30:26
+Senya	exit	2024-09-27	13:30:29
+Senya	ls	2024-09-27	13:45:11
+Senya	cd ..	2024-09-27	13:45:11
+Senya	cd ./folder_1	2024-09-27	13:45:11
+Senya	ls	2024-09-27	13:45:11
+Senya	cd ..	2024-09-27	13:45:11
+Senya	tac text_1.txt	2024-09-27	13:45:11
+Senya	ls	2024-09-27	13:45:47
+Senya	cd ..	2024-09-27	13:45:47
+Senya	cd ./folder_1	2024-09-27	13:45:47
+Senya	ls	2024-09-27	13:45:47
+Senya	cd ..	2024-09-27	13:45:47
+Senya	tac text_1.txt	2024-09-27	13:45:47
+Senya	find mask.	2024-09-27	13:45:58
+Senya	find  . 	2024-09-27	13:46:06
+Senya	find *.?	2024-09-27	13:46:18
+Senya	ls	2024-09-27	13:49:45
+Senya	cd ..	2024-09-27	13:49:45
+Senya	cd ./folder_1	2024-09-27	13:49:45
+Senya	ls	2024-09-27	13:49:45
+Senya	cd ..	2024-09-27	13:49:45
+Senya	tac text_1.txt	2024-09-27	13:49:45
+Senya	find *.txt	2024-09-27	13:49:55
+Senya	ls	2024-09-27	13:50:18
+Senya	cd ..	2024-09-27	13:50:18
+Senya	cd ./folder_1	2024-09-27	13:50:18
+Senya	ls	2024-09-27	13:50:18
+Senya	cd ..	2024-09-27	13:50:18
+Senya	tac text_1.txt	2024-09-27	13:50:18
+Senya	find *.txt	2024-09-27	13:50:24
+Senya	find folder_1/a1.txt	2024-09-27	13:50:50
+Senya	find a1.txt	2024-09-27	13:50:57
+Senya	find b1.txt	2024-09-27	13:51:02
+Senya	find t*.*	2024-09-27	13:51:13
+Senya	ls	2024-09-27	13:51:31
+Senya	cd ..	2024-09-27	13:51:31
+Senya	cd ./folder_1	2024-09-27	13:51:31
+Senya	ls	2024-09-27	13:51:31
+Senya	cd ..	2024-09-27	13:51:31
+Senya	tac text_1.txt	2024-09-27	13:51:31
+Senya	find jsdhasjkhdjkashdjkas.*	2024-09-27	13:51:37
+Senya	ls	2024-09-27	14:20:55
+Senya	cd ..	2024-09-27	14:20:55
+Senya	cd ./folder_1	2024-09-27	14:20:55
+Senya	ls	2024-09-27	14:20:55
+Senya	cd ..	2024-09-27	14:20:55
+Senya	tac text_1.txt	2024-09-27	14:20:55
+Senya	cd folder_1	2024-09-27	14:21:02
+Senya	ls ~	2024-09-27	14:21:05
+Senya	ls	2024-09-27	14:23:47
+Senya	cd ..	2024-09-27	14:23:47
+Senya	cd ./folder_1	2024-09-27	14:23:47
+Senya	ls	2024-09-27	14:23:47
+Senya	cd ..	2024-09-27	14:23:47
+Senya	tac text_1.txt	2024-09-27	14:23:47
+Senya	find . a1.txt	2024-09-27	14:23:57
+Senya	ls	2024-09-27	14:24:51
+Senya	cd ..	2024-09-27	14:24:51
+Senya	cd ./folder_1	2024-09-27	14:24:51
+Senya	ls	2024-09-27	14:24:51
+Senya	cd ..	2024-09-27	14:24:51
+Senya	tac text_1.txt	2024-09-27	14:24:51
+Senya	find . a1.txt	2024-09-27	14:25:02
+Senya	find . *.*	2024-09-27	14:27:09
+Senya	find ../ *.*	2024-09-27	14:27:09
+Senya	find .. *.*	2024-09-27	14:27:09
+Senya	find ../folder_1 *.*	2024-09-27	14:27:09
+Senya	find ~ *.*	2024-09-27	14:27:09
+Senya	find ~/folder_1 *.*	2024-09-27	14:27:09
+Senya	find folder_1 *.*	2024-09-27	14:27:09
+Senya	find folder *.*	2024-09-27	14:27:09
+Senya	find . *.*	2024-09-27	14:29:38
+Senya	find ../ *.*	2024-09-27	14:29:38
+Senya	find .. *.*	2024-09-27	14:29:38
+Senya	find ../folder_1 *.*	2024-09-27	14:29:38
+Senya	find ~ *.*	2024-09-27	14:29:38
+Senya	find ~/folder_1 *.*	2024-09-27	14:29:38
+Senya	find folder_1 *.*	2024-09-27	14:29:38
+Senya	find folder *.*	2024-09-27	14:29:38
+Senya	find . *.*	2024-09-27	14:30:42
+Senya	find ../ *.*	2024-09-27	14:30:42
+Senya	find .. *.*	2024-09-27	14:30:42
+Senya	find ../folder_1 *.*	2024-09-27	14:30:42
+Senya	find ~ *.*	2024-09-27	14:30:42
+Senya	find ~/folder_1 *.*	2024-09-27	14:30:42
+Senya	find folder_1 *.*	2024-09-27	14:30:42
+Senya	find folder *.*	2024-09-27	14:30:42
+Senya	find . *.*	2024-09-27	14:31:09
+Senya	find ../ *.*	2024-09-27	14:31:09
+Senya	find .. *.*	2024-09-27	14:31:09
+Senya	find ../folder_1 *.*	2024-09-27	14:31:09
+Senya	find ~ *.*	2024-09-27	14:31:09
+Senya	find ~/folder_1 *.*	2024-09-27	14:31:09
+Senya	find folder_1 *.*	2024-09-27	14:31:09
+Senya	find folder *.*	2024-09-27	14:31:09
+Senya	find . *.*	2024-09-27	14:31:36
+Senya	find ../ *.*	2024-09-27	14:31:36
+Senya	find .. *.*	2024-09-27	14:31:36
+Senya	find ../folder_1 *.*	2024-09-27	14:31:36
+Senya	find ~ *.*	2024-09-27	14:31:36
+Senya	find ~/folder_1 *.*	2024-09-27	14:31:36
+Senya	find folder_1 *.*	2024-09-27	14:31:36
+Senya	find folder *.*	2024-09-27	14:31:36
+Senya	find . *.*	2024-09-27	14:35:36
+Senya	find ../ *.*	2024-09-27	14:35:36
+Senya	find .. *.*	2024-09-27	14:35:36
+Senya	find ../folder_1 *.*	2024-09-27	14:35:36
+Senya	find ~ *.*	2024-09-27	14:35:36
+Senya	find ~/folder_1 *.*	2024-09-27	14:35:36
+Senya	find folder_1 *.*	2024-09-27	14:35:36
+Senya	find folder *.*	2024-09-27	14:35:36
+Senya	find . *.*	2024-09-27	14:36:53
+Senya	find ../ *.*	2024-09-27	14:36:53
+Senya	find .. *.*	2024-09-27	14:36:53
+Senya	find ../folder_1 *.*	2024-09-27	14:36:53
+Senya	find ~ *.*	2024-09-27	14:36:53
+Senya	find ~/folder_1 *.*	2024-09-27	14:36:53
+Senya	find folder_1 *.*	2024-09-27	14:36:53
+Senya	find folder *.*	2024-09-27	14:36:53
+Senya	cd folder_1	2024-09-27	14:36:53
+Senya	cd ../folder_2 *.	2024-09-27	14:36:53
+Senya	find . *.*	2024-09-27	14:37:13
+Senya	find ../ *.*	2024-09-27	14:37:13
+Senya	find .. *.*	2024-09-27	14:37:13
+Senya	find ../folder_1 *.*	2024-09-27	14:37:13
+Senya	find ~ *.*	2024-09-27	14:37:13
+Senya	find ~/folder_1 *.*	2024-09-27	14:37:13
+Senya	find folder_1 *.*	2024-09-27	14:37:13
+Senya	find folder *.*	2024-09-27	14:37:13
+Senya	cd folder_1	2024-09-27	14:37:13
+Senya	find ../folder_2 *.	2024-09-27	14:37:13
+Senya	find . *.*	2024-09-27	14:37:19
+Senya	find ../ *.*	2024-09-27	14:37:19
+Senya	find .. *.*	2024-09-27	14:37:19
+Senya	find ../folder_1 *.*	2024-09-27	14:37:19
+Senya	find ~ *.*	2024-09-27	14:37:19
+Senya	find ~/folder_1 *.*	2024-09-27	14:37:19
+Senya	find folder_1 *.*	2024-09-27	14:37:19
+Senya	find folder *.*	2024-09-27	14:37:19
+Senya	cd folder_1	2024-09-27	14:37:19
+Senya	find ../folder_2 *.*	2024-09-27	14:37:19
+Senya	find . *.*	2024-09-27	14:39:37
+Senya	find ../ *.*	2024-09-27	14:39:37
+Senya	find .. *.*	2024-09-27	14:39:37
+Senya	find ../folder_1 *.*	2024-09-27	14:39:37
+Senya	find ~ *.*	2024-09-27	14:39:37
+Senya	find ~/folder_1 *.*	2024-09-27	14:39:37
+Senya	find folder_1 *.*	2024-09-27	14:39:37
+Senya	find folder *.*	2024-09-27	14:39:37
+Senya	cd folder_1	2024-09-27	14:39:37
+Senya	find ../folder_2 *.*	2024-09-27	14:39:37
+Senya	cd ../	2024-09-27	14:40:00
+Senya	find . *.*	2024-09-27	14:42:44
+Senya	find ../ *.*	2024-09-27	14:42:44
+Senya	find .. *.*	2024-09-27	14:42:44
+Senya	find ../folder_1 *.*	2024-09-27	14:42:44
+Senya	find ~ *.*	2024-09-27	14:42:44
+Senya	find ~/folder_1 *.*	2024-09-27	14:42:44
+Senya	find folder_1 *.*	2024-09-27	14:42:44
+Senya	find folder *.*	2024-09-27	14:42:44
+Senya	cd folder_1	2024-09-27	14:42:44
+Senya	find ../folder_2 *.*	2024-09-27	14:42:44
+Senya	ls ../	2024-09-27	14:42:52
+Senya	find . *.*	2024-09-27	14:44:39
+Senya	find ../ *.*	2024-09-27	14:44:39
+Senya	find .. *.*	2024-09-27	14:44:39
+Senya	find ../folder_1 *.*	2024-09-27	14:44:39
+Senya	find ~ *.*	2024-09-27	14:44:39
+Senya	find ~/folder_1 *.*	2024-09-27	14:44:39
+Senya	find folder_1 *.*	2024-09-27	14:44:39
+Senya	find folder *.*	2024-09-27	14:44:39
+Senya	cd folder_1	2024-09-27	14:44:39
+Senya	find ../folder_2 *.*	2024-09-27	14:44:39
+Senya	ls ../	2024-09-27	14:44:44
+Senya	ls ../folder_3	2024-09-27	14:44:58
+Senya	ls ../folder_2	2024-09-27	14:45:05
+Senya	find . *.*	2024-09-27	14:45:32
+Senya	find ../ *.*	2024-09-27	14:45:32
+Senya	find .. *.*	2024-09-27	14:45:32
+Senya	find ../folder_1 *.*	2024-09-27	14:45:32
+Senya	find ~ *.*	2024-09-27	14:45:32
+Senya	find ~/folder_1 *.*	2024-09-27	14:45:32
+Senya	find folder_1 *.*	2024-09-27	14:45:32
+Senya	find folder *.*	2024-09-27	14:45:32
+Senya	cd folder_1	2024-09-27	14:45:32
+Senya	find ../folder_2 *.*	2024-09-27	14:45:32
+Senya	cd ../	2024-09-27	14:45:35
+Senya	cd ../folder_2	2024-09-27	14:45:41
+Senya	cd ../folder_1	2024-09-27	14:45:45
+Senya	find . *.*	2024-09-27	14:46:41
+Senya	find ../ *.*	2024-09-27	14:46:41
+Senya	find .. *.*	2024-09-27	14:46:41
+Senya	find ../folder_1 *.*	2024-09-27	14:46:41
+Senya	find ~ *.*	2024-09-27	14:46:41
+Senya	find ~/folder_1 *.*	2024-09-27	14:46:41
+Senya	find folder_1 *.*	2024-09-27	14:46:41
+Senya	find folder *.*	2024-09-27	14:46:41
+Senya	cd folder_1	2024-09-27	14:46:41
+Senya	find ../folder_2 *.*	2024-09-27	14:46:41
+Senya	tac ../	2024-09-27	14:46:44
+Senya	find . *.*	2024-09-27	14:47:08
+Senya	find ../ *.*	2024-09-27	14:47:08
+Senya	find .. *.*	2024-09-27	14:47:08
+Senya	find ../folder_1 *.*	2024-09-27	14:47:08
+Senya	find ~ *.*	2024-09-27	14:47:08
+Senya	find ~/folder_1 *.*	2024-09-27	14:47:08
+Senya	find folder_1 *.*	2024-09-27	14:47:08
+Senya	find folder *.*	2024-09-27	14:47:08
+Senya	cd folder_1	2024-09-27	14:47:08
+Senya	find ../folder_2 *.*	2024-09-27	14:47:08
+Senya	touch ../	2024-09-27	14:47:12
+Senya	find . *.*	2024-09-27	14:47:44
+Senya	find ../ *.*	2024-09-27	14:47:44
+Senya	find .. *.*	2024-09-27	14:47:44
+Senya	find ../folder_1 *.*	2024-09-27	14:47:44
+Senya	find ~ *.*	2024-09-27	14:47:44
+Senya	find ~/folder_1 *.*	2024-09-27	14:47:44
+Senya	find folder_1 *.*	2024-09-27	14:47:44
+Senya	find folder *.*	2024-09-27	14:47:44
+Senya	cd folder_1	2024-09-27	14:47:44
+Senya	find ../folder_2 *.*	2024-09-27	14:47:44
+Senya	mv text_1.txt ../	2024-09-27	14:47:56
+Senya	cd ..	2024-09-27	14:48:01
+Senya	mv text_1.txt ../	2024-09-27	14:48:09
+Senya	mv text_1.txt ../	2024-09-27	14:48:55
+Senya	find . *.*	2024-09-27	14:51:20
+Senya	find ../ *.*	2024-09-27	14:51:20
+Senya	find .. *.*	2024-09-27	14:51:20
+Senya	find ../folder_1 *.*	2024-09-27	14:51:20
+Senya	find ~ *.*	2024-09-27	14:51:20
+Senya	find ~/folder_1 *.*	2024-09-27	14:51:20
+Senya	find folder_1 *.*	2024-09-27	14:51:20
+Senya	find folder *.*	2024-09-27	14:51:20
+Senya	cd folder_1	2024-09-27	14:51:20
+Senya	find ../folder_2 *.*	2024-09-27	14:51:20
+Senya	mv a1.txt ../	2024-09-27	14:51:29
+Senya	find . *.*	2024-09-27	14:51:49
+Senya	find ../ *.*	2024-09-27	14:51:49
+Senya	find .. *.*	2024-09-27	14:51:49
+Senya	find ../folder_1 *.*	2024-09-27	14:51:49
+Senya	find ~ *.*	2024-09-27	14:51:49
+Senya	find ~/folder_1 *.*	2024-09-27	14:51:49
+Senya	find folder_1 *.*	2024-09-27	14:51:49
+Senya	find folder *.*	2024-09-27	14:51:49
+Senya	cd folder_1	2024-09-27	14:51:49
+Senya	find ../folder_2 *.*	2024-09-27	14:51:49
+Senya	mv a1.txt ../	2024-09-27	14:52:21
+Senya	ls ..	2024-09-27	14:52:24
+Senya	mv b1.txt ..	2024-09-27	14:52:37
+Senya	ls	2024-09-27	14:52:39
+Senya	mv inside_folder .	2024-09-27	14:52:58
+Senya	find . *.*	2024-09-27	14:53:57
+Senya	find ../ *.*	2024-09-27	14:53:57
+Senya	find .. *.*	2024-09-27	14:53:57
+Senya	find ../folder_1 *.*	2024-09-27	14:53:57
+Senya	find ~ *.*	2024-09-27	14:53:57
+Senya	find ~/folder_1 *.*	2024-09-27	14:53:57
+Senya	find folder_1 *.*	2024-09-27	14:53:57
+Senya	find folder *.*	2024-09-27	14:53:57
+Senya	cd folder_1	2024-09-27	14:53:57
+Senya	find ../folder_2 *.*	2024-09-27	14:53:57
+Senya	mv inside_folder .	2024-09-27	14:54:04
+Senya	mv disk.disk ./	2024-09-27	14:54:55
+Senya	find . *.*	2024-09-27	14:55:24
+Senya	find ../ *.*	2024-09-27	14:55:24
+Senya	find .. *.*	2024-09-27	14:55:24
+Senya	find ../folder_1 *.*	2024-09-27	14:55:24
+Senya	find ~ *.*	2024-09-27	14:55:24
+Senya	find ~/folder_1 *.*	2024-09-27	14:55:24
+Senya	find folder_1 *.*	2024-09-27	14:55:24
+Senya	find folder *.*	2024-09-27	14:55:24
+Senya	cd folder_1	2024-09-27	14:55:24
+Senya	find ../folder_2 *.*	2024-09-27	14:55:24
+Senya	mv disk.disk .	2024-09-27	14:55:31
+Senya	find . *.*	2024-09-27	14:57:35
+Senya	find ../ *.*	2024-09-27	14:57:35
+Senya	find .. *.*	2024-09-27	14:57:35
+Senya	find ../folder_1 *.*	2024-09-27	14:57:35
+Senya	find ~ *.*	2024-09-27	14:57:35
+Senya	find ~/folder_1 *.*	2024-09-27	14:57:35
+Senya	find folder_1 *.*	2024-09-27	14:57:35
+Senya	find folder *.*	2024-09-27	14:57:35
+Senya	cd folder_1	2024-09-27	14:57:35
+Senya	find ../folder_2 *.*	2024-09-27	14:57:35
+Senya	find . *.*	2024-09-27	14:57:42
+Senya	find ../ *.*	2024-09-27	14:57:42
+Senya	find .. *.*	2024-09-27	14:57:42
+Senya	find ../folder_1 *.*	2024-09-27	14:57:42
+Senya	find ~ *.*	2024-09-27	14:57:42
+Senya	find ~/folder_1 *.*	2024-09-27	14:57:42
+Senya	find folder_1 *.*	2024-09-27	14:57:42
+Senya	find folder *.*	2024-09-27	14:57:42
+Senya	cd folder_1	2024-09-27	14:57:42
+Senya	find ../folder_2 *.*	2024-09-27	14:57:42
+Senya	mv disk.disk ./	2024-09-27	14:57:49
+Senya	mv disk.disk .	2024-09-27	14:57:58
+Senya	mv disk.disk ./a.disk	2024-09-27	14:58:14
+Senya	ls	2024-09-27	14:58:16
+Senya	find . *.*	2024-09-27	14:59:17
+Senya	find ../ *.*	2024-09-27	14:59:17
+Senya	find .. *.*	2024-09-27	14:59:17
+Senya	find ../folder_1 *.*	2024-09-27	14:59:17
+Senya	find ~ *.*	2024-09-27	14:59:17
+Senya	find ~/folder_1 *.*	2024-09-27	14:59:17
+Senya	find folder_1 *.*	2024-09-27	14:59:17
+Senya	find folder *.*	2024-09-27	14:59:17
+Senya	cd folder_1	2024-09-27	14:59:17
+Senya	find ../folder_2 *.*	2024-09-27	14:59:17
+Senya	find . *.*	2024-09-27	15:01:43
+Senya	find ../ *.*	2024-09-27	15:01:43
+Senya	find .. *.*	2024-09-27	15:01:43
+Senya	find ../folder_1 *.*	2024-09-27	15:01:43
+Senya	find ~ *.*	2024-09-27	15:01:43
+Senya	find ~/folder_1 *.*	2024-09-27	15:01:43
+Senya	find folder_1 *.*	2024-09-27	15:01:43
+Senya	find folder *.*	2024-09-27	15:01:43
+Senya	cd folder_1	2024-09-27	15:01:43
+Senya	find ../folder_2 *.*	2024-09-27	15:01:43
+Senya	ls	2024-09-27	15:05:22
+Senya	cd folder_1	2024-09-27	15:05:22
+Senya	touch new_file.txt	2024-09-27	15:05:22
+Senya	tac a1.txt	2024-09-27	15:05:22
+Senya	mv new_file.txt ../folder_3	2024-09-27	15:05:22
+Senya	ls ../folder_3	2024-09-27	15:05:22
+Senya	find -all *.*	2024-09-27	15:05:22
+Senya	find text*.*	2024-09-27	15:05:22
+Senya	find ../folder_3 *.*	2024-09-27	15:05:22
+Senya	ls	2024-09-27	15:24:00
+Senya	cd folder_1	2024-09-27	15:24:00
+Senya	touch new_file.txt	2024-09-27	15:24:00
+Senya	tac a1.txt	2024-09-27	15:24:00
+Senya	mv new_file.txt ../folder_3	2024-09-27	15:24:00
+Senya	ls ../folder_3	2024-09-27	15:24:00
+Senya	find -all *.*	2024-09-27	15:24:00
+Senya	find text*.*	2024-09-27	15:24:00
+Senya	find ../folder_3 *.*	2024-09-27	15:24:00
+Senya	ls	2024-09-27	15:24:08
+Senya	cd folder_1	2024-09-27	15:24:08
+Senya	touch new_file.txt	2024-09-27	15:24:08
+Senya	tac a1.txt	2024-09-27	15:24:08
+Senya	mv new_file.txt ../folder_3	2024-09-27	15:24:08
+Senya	ls ../folder_3	2024-09-27	15:24:08
+Senya	find -all *.*	2024-09-27	15:24:08
+Senya	find text*.*	2024-09-27	15:24:08
+Senya	find ../folder_3 *.*	2024-09-27	15:24:08
+Senya	ls	2024-09-27	15:25:51
+Senya	cd folder_1	2024-09-27	15:25:51
+Senya	touch new_file.txt	2024-09-27	15:25:52
+Senya	tac a1.txt	2024-09-27	15:25:52
+Senya	mv new_file.txt ../folder_3	2024-09-27	15:25:52
+Senya	ls ../folder_3	2024-09-27	15:25:52
+Senya	find -all *.*	2024-09-27	15:25:52
+Senya	find text*.*	2024-09-27	15:25:52
+Senya	find ../folder_3 *.*	2024-09-27	15:25:52

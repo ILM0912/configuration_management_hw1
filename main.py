@@ -1,8 +1,8 @@
 import csv
 import os
-import shutil
 import sys
 import tkinter as tk
+from fnmatch import fnmatch
 from tkinter import scrolledtext
 import tarfile
 from datetime import datetime
@@ -18,7 +18,8 @@ def command_ls(path):
     info.insert(tk.END, "username:" + user_name + " - " + current_dir + '> ' + last_command + '\n')
     with open(log_file, mode='a', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile, delimiter='\t')
-        writer.writerow([user_name, last_command, datetime.now().strftime("%Y-%m-%d"), datetime.now().strftime("%H:%M:%S")])
+        writer.writerow(
+            [user_name, last_command, datetime.now().strftime("%Y-%m-%d"), datetime.now().strftime("%H:%M:%S")])
     if len(path) == 0 or path == ".":
         with tarfile.open(disk_files, 'r') as tar:
             result = ""
@@ -43,6 +44,23 @@ def command_ls(path):
                 info.insert(tk.END, 'Directory is empty\n')
             else:
                 info.insert(tk.END, result)
+    elif path == ".." or path=='../':
+        dir = '/'.join(current_dir.split("/")[:-2]) + '/'
+        if current_dir == "disk/":
+            info.insert(tk.END, 'disk\n')
+            return
+        else:
+            with tarfile.open(disk_files, 'r') as tar:
+                result = ""
+                for member in tar.getmembers():
+                    if dir in member.name:
+                        file = member.name[len(dir):].split("/")
+                        if len(file) == 1:
+                            result += file[0] + "\n"
+                if len(result) == 0:
+                    info.insert(tk.END, 'Directory is empty\n')
+                else:
+                    info.insert(tk.END, result)
     elif path[0] == '.' and path[1] == '.' and path[2] == '/':
         if path[3:].count('.') > 0:
             info.insert(tk.END, 'No such directory: ' + path + '\n')
@@ -66,23 +84,6 @@ def command_ls(path):
                 info.insert(tk.END, 'Directory is empty\n')
             else:
                 info.insert(tk.END, result)
-    elif path == "..":
-        dir = '/'.join(current_dir.split("/")[:-2]) + '/'
-        if current_dir == "disk/":
-            info.insert(tk.END, 'disk\n')
-            return
-        else:
-            with tarfile.open(disk_files, 'r') as tar:
-                result = ""
-                for member in tar.getmembers():
-                    if dir in member.name:
-                        file = member.name[len(dir):].split("/")
-                        if len(file) == 1:
-                            result += file[0] + "\n"
-                if len(result) == 0:
-                    info.insert(tk.END, 'Directory is empty\n')
-                else:
-                    info.insert(tk.END, result)
     elif path[0] == '/' or (len(path) > 1 and path[0] == "~" and path[1] == '/'):
         if path[0] == "~" and path[1] == '/':
             path = path[2:]
@@ -128,7 +129,8 @@ def command_cd(path):
     info.insert(tk.END, "username:" + user_name + " - " + current_dir + '> ' + last_command + '\n')
     with open(log_file, mode='a', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile, delimiter='\t')
-        writer.writerow([user_name, last_command, datetime.now().strftime("%Y-%m-%d"), datetime.now().strftime("%H:%M:%S")])
+        writer.writerow(
+            [user_name, last_command, datetime.now().strftime("%Y-%m-%d"), datetime.now().strftime("%H:%M:%S")])
     if len(path) == 0 or path == '.':
         info.insert(tk.END, current_dir + '\n')
     elif path == "~" or path == '/':
@@ -144,8 +146,9 @@ def command_cd(path):
                 current_dir = new_dir + '/'
             else:
                 info.insert(tk.END, 'No such directory: ' + path + '\n')
-    elif path == "..":
-        if current_dir == "disk/": return
+    elif path == ".." or path == '../':
+        if current_dir == "disk/":
+            return
         current_dir = '/'.join(current_dir.split("/")[:-2]) + '/'
     elif path[0] == '.' and path[1] == '.' and path[2] == '/':
         if path[3:].count('.') > 0:
@@ -178,7 +181,8 @@ def command_tac(files):
     info.insert(tk.END, "username:" + user_name + " - " + current_dir + '> ' + last_command + '\n')
     with open(log_file, mode='a', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile, delimiter='\t')
-        writer.writerow([user_name, last_command, datetime.now().strftime("%Y-%m-%d"), datetime.now().strftime("%H:%M:%S")])
+        writer.writerow(
+            [user_name, last_command, datetime.now().strftime("%Y-%m-%d"), datetime.now().strftime("%H:%M:%S")])
     if len(files) == 0:
         info.insert(tk.END, 'Empty\n')
         return
@@ -187,9 +191,9 @@ def command_tac(files):
             path = file[1:]
         elif file[0] == '~' and file[1] == '/':
             path = 'disk/' + file[2:]
-        elif len(file)>1 and file[0]=='.' and file[1]=='/':
+        elif len(file) > 1 and file[0] == '.' and file[1] == '/':
             path = current_dir + file[2:]
-        elif len(file)>2 and file[0] == '.' and file[1] == '.' and file[2] == '/':
+        elif len(file) > 2 and file[0] == '.' and file[1] == '.' and file[2] == '/':
             if current_dir != 'disk/':
                 path = ('/'.join(current_dir.split('/')[:-2]) + '/' + file[3:])
             else:
@@ -216,7 +220,8 @@ def command_touch(filename):
     info.insert(tk.END, "username:" + user_name + " - " + current_dir + '> ' + last_command + '\n')
     with open(log_file, mode='a', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile, delimiter='\t')
-        writer.writerow([user_name, last_command, datetime.now().strftime("%Y-%m-%d"), datetime.now().strftime("%H:%M:%S")])
+        writer.writerow(
+            [user_name, last_command, datetime.now().strftime("%Y-%m-%d"), datetime.now().strftime("%H:%M:%S")])
     if len(filename) == 0:
         info.insert(tk.END, 'Empty\n')
         return
@@ -226,7 +231,7 @@ def command_touch(filename):
         path = 'disk/' + filename[2:]
     elif len(filename) > 1 and filename[0] == '.' and filename[1] == '/':
         path = current_dir + filename[2:]
-    elif len(filename)>2 and filename[0] == '.' and filename[1] == '.' and filename[2] == '/':
+    elif len(filename) > 2 and filename[0] == '.' and filename[1] == '.' and filename[2] == '/':
         if current_dir != 'disk/':
             path = ('/'.join(current_dir.split('/')[:-2]) + '/' + filename[3:])
         else:
@@ -253,11 +258,13 @@ def command_touch(filename):
     finally:
         os.remove('temp_file_path.txt')
 
+
 def command_mv(source, destination):
     info.insert(tk.END, "username:" + user_name + " - " + current_dir + '> ' + last_command + '\n')
     with open(log_file, mode='a', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile, delimiter='\t')
-        writer.writerow([user_name, last_command, datetime.now().strftime("%Y-%m-%d"), datetime.now().strftime("%H:%M:%S")])
+        writer.writerow(
+            [user_name, last_command, datetime.now().strftime("%Y-%m-%d"), datetime.now().strftime("%H:%M:%S")])
 
     if source == 'error' and destination == 'error':
         info.insert(tk.END, 'please enter source and destination\n')
@@ -268,7 +275,7 @@ def command_mv(source, destination):
         path_source = 'disk/' + source[2:]
     elif len(source) > 1 and source[0] == '.' and source[1] == '/':
         path_source = current_dir + source[2:]
-    elif len(source)>2 and source[0] == '.' and source[1] == '.' and source[2] == '/':
+    elif len(source) > 2 and source[0] == '.' and source[1] == '.' and source[2] == '/':
         if current_dir != 'disk/':
             path_source = ('/'.join(current_dir.split('/')[:-2]) + '/' + source[3:])
         else:
@@ -282,14 +289,19 @@ def command_mv(source, destination):
         path_destination = 'disk/' + destination[2:]
     elif len(destination) > 1 and destination[0] == '.' and destination[1] == '/':
         path_destination = current_dir + destination[2:]
-    elif len(destination)>2 and destination[0] == '.' and destination[1] == '.' and destination[2] == '/':
+    elif destination == ".." or destination == '../':
+        if current_dir == "disk/":
+            return
+        path_destination = '/'.join(current_dir.split("/")[:-2])
+    elif len(destination) > 2 and destination[0] == '.' and destination[1] == '.' and destination[2] == '/':
         if current_dir != 'disk/':
             path_destination = ('/'.join(current_dir.split('/')[:-2]) + '/' + destination[3:])
         else:
             path_destination = current_dir + destination[3:]
     else:
         path_destination = current_dir + destination
-    print(path_source, path_destination)
+    if path_destination.split('/')[-1].count('.') == 0:
+        path_destination += '/' + path_source.split('/')[-1]
     with tarfile.open(disk_files, 'r') as tar:
         if path_source.count('.') != 1 and path_destination.count('.') != 1:
             info.insert(tk.END, 'Not files: ' + path_source + ' ' + path_destination + '\n')
@@ -328,9 +340,77 @@ def command_mv(source, destination):
     os.rename(temp_tar, disk_files)
 
 
-def command_analyzer():
+def command_find(directory, filename):
+    info.insert(tk.END, "username:" + user_name + " - " + current_dir + '> ' + last_command + '\n')
+    with open(log_file, mode='a', newline='', encoding='utf-8') as csvfile:
+        writer = csv.writer(csvfile, delimiter='\t')
+        writer.writerow(
+            [user_name, last_command, datetime.now().strftime("%Y-%m-%d"), datetime.now().strftime("%H:%M:%S")])
+
+    test_mask = filename.split('.')
+    if not (len(test_mask) == 2 and len(test_mask[0]) > 0 and len(test_mask[1]) > 0 and filename.count('/') == 0):
+        info.insert(tk.END, 'I dont understand your mask: ' + filename + '\n')
+        return
+    if directory == '-all':
+        with tarfile.open(disk_files, 'r') as tar:
+            result = ''
+            for member in tar.getmembers():
+                if fnmatch(member.name.split('/')[-1], filename):
+                    result += member.name + '\n'
+            if len(result) == 0:
+                info.insert(tk.END, 'No such files: ' + filename + '\n')
+            else:
+                info.insert(tk.END, result)
+    else:
+        if directory == '~' or directory == '/':
+            path_dir = 'disk'
+        elif directory == '.':
+            path_dir = current_dir[:-1]
+        elif directory == '..' or directory=='../':
+            if current_dir == 'disk/':
+                path_dir = "disk"
+            else:
+                path_dir = '/'.join(current_dir.split("/")[:-2]) + '/'
+        elif len(directory) > 1 and directory[0] == '.' and directory[1] == '/':
+            path_dir = current_dir + directory[2:]
+        elif directory[0] == '/':
+            path_dir = directory[1:]
+        elif len(directory)>1 and directory[0] == '~' and directory[1] == '/':
+            path_dir = 'disk/' + directory[2:]
+        elif len(directory)>2 and directory[0]=='.' and directory[1]=='.' and directory[2]=='/':
+            if current_dir != 'disk/':
+                path_dir = ('/'.join(current_dir.split('/')[:-2]) + '/' + directory[3:])
+            else:
+                path_dir = current_dir + directory[3:]
+        else:
+            path_dir = current_dir+directory
+        print(path_dir)
+        if path_dir.count('.') > 0:
+            info.insert(tk.END, 'Not a directory: ' + path_dir + '\n')
+            return
+        with tarfile.open(disk_files, 'r') as tar:
+            if all(member.name != path_dir for member in tar.getmembers()):
+                info.insert(tk.END, 'No such directory: ' + path_dir + '\n')
+                return
+            result = ''
+            depth = path_dir.count('/')+1
+            for member in tar.getmembers():
+                if fnmatch(member.name, path_dir+'/'+filename) and depth == member.name.count('/'):
+                    result += member.name + '\n'
+            if len(result) == 0:
+                info.insert(tk.END, 'No such files: ' + filename + '\n')
+            else:
+                info.insert(tk.END, result)
+
+
+
+
+def command_analyzer(type_command='not_start_script'):
     global last_command
-    commandLine = entry.get()
+    if type_command == 'not_start_script':
+        commandLine = entry.get()
+    else:
+        commandLine = type_command
     entry.delete(0, tk.END)
     command = commandLine.split()
     last_command = commandLine
@@ -348,6 +428,10 @@ def command_analyzer():
         else:
             command_cd("")
     elif command[0] == 'exit':
+        with open(log_file, mode='a', newline='', encoding='utf-8') as csvfile:
+            writer = csv.writer(csvfile, delimiter='\t')
+            writer.writerow(
+                [user_name, last_command, datetime.now().strftime("%Y-%m-%d"), datetime.now().strftime("%H:%M:%S")])
         sys.exit(0)
     elif command[0] == 'tac':
         if len(command) > 1:
@@ -368,17 +452,32 @@ def command_analyzer():
         info.delete('1.0', tk.END)
         with open(log_file, mode='a', newline='', encoding='utf-8') as csvfile:
             writer = csv.writer(csvfile, delimiter='\t')
-            writer.writerow([user_name, last_command, datetime.now().strftime("%Y-%m-%d"), datetime.now().strftime("%H:%M:%S")])
+            writer.writerow(
+                [user_name, last_command, datetime.now().strftime("%Y-%m-%d"), datetime.now().strftime("%H:%M:%S")])
+    elif command[0] == 'find':
+        if len(command) == 3:
+            command_find(command[1], command[2])
+        elif len(command) == 2:
+            command_find('-all', command[1])
+        else:
+            command_find('error', 'error')
     else:
-        info.insert(tk.END, "username:" + user_name + " - " + current_dir + "> " + last_command + " - Unknown command\n")
+        info.insert(tk.END,
+                    "username:" + user_name + " - " + current_dir + "> " + last_command + " - Unknown command\n")
     directory.config(text=current_dir + ">")
     info.config(state=tk.DISABLED)
     info.see(tk.END)
 
 
+def start_script():
+    script = open("start_script.txt", 'r')
+    for i in script.readlines():
+        command_analyzer(i[:-1])
+
+
 root = tk.Tk()
 root.title("Virtual Shell")
-root.geometry("1000x500")
+root.geometry("1200x600")
 info = scrolledtext.ScrolledText(root, width=40, height=10, wrap=tk.WORD, font=("Kristen ITC", 14), bg="pink")
 info.insert(tk.END, "Welcome to vShell, " + user_name + '\n')
 info.pack(expand=True, fill='both')
@@ -393,5 +492,8 @@ entry.bind('<Return>', lambda event: command_analyzer())
 button = tk.Button(input_frame, text="Confirm", command=command_analyzer, font=("Kristen ITC", 14))
 button.pack(side=tk.LEFT, padx=30)
 
-# root.resizable(False, False)
+root.resizable(False, False)
+
+start_script()
+
 root.mainloop()

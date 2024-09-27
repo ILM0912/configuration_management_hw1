@@ -1,0 +1,9 @@
+ls
+cd folder_1
+touch new_file.txt
+tac a1.txt
+mv new_file.txt ../folder_3
+ls ../folder_3
+find -all *.*
+find text*.*
+find ../folder_3 *.*
